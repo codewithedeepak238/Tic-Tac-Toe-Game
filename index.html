@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Tic-Tac-Toe</h1>
+        <div class="table_area">
+            <div class="table">
+                <div class="row">
+                    <button type="submit" class="cell" value=""></button>
+                    <button type="submit" class="cell" value=""></button>
+                    <button type="submit" class="cell" value=""></button>
+                </div>
+                <div class="row">
+                    <button type="submit" class="cell" value=""></button>
+                    <button type="submit" class="cell" value=""></button>
+                    <button type="submit" class="cell" value=""></button>
+                </div>
+                <div class="row">
+                    <button type="submit" class="cell" value=""></button>
+                    <button type="submit" class="cell" value=""></button>
+                    <button type="submit" class="cell" value=""></button>
+                </div>
+            </div>
+        </div>
+        <div class="users">
+            <h2>Choose</h2>
+            <div class="options">
+                <button value="X" id="bX">X</button>
+                <button value="O" id="b0">O</button>
+            </div>
+        </div>
+
+        <div class="winnerDisplay">
+            <p><span id="winnerName"></span></p>
+            <button id="restart">Restart Game</button>
+        </div>
+    </div>
+</body>
+</html>

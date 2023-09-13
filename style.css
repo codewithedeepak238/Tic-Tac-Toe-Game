@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background: linear-gradient(to right bottom, #051937, #0c296a, #39339b, #7433c8, #b912eb);
+    height: 100vh;
+}
+h1{
+    color: #ace4c7;
+    margin-bottom: 1rem;
+}
+img{
+    object-fit: cover;
+    object-position: center;
+}
+.container{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.table_area, .users{
+    width: 300px;
+    background-color: white;
+    margin: 10px auto;
+    padding: 20px 25px;
+    border-radius: 15px;
+}
+.table_area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.users{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+.users button{
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin: 0 5px;
+    background: tomato;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.users button:hover{
+    background: rgb(255, 99, 71, 0.9);
+}
+
+.table{
+    width: 100%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+.table .row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.2rem;
+}
+.table button{
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background: transparent;
+}
+
+.winnerDisplay{
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 8px rgba(0,0,0,0.4);
+    display: none;
+}
+.winnerDisplay p{
+    font-size: 1rem;
+}
+.winnerDisplay p span{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: tomato;
+}
+.winnerDisplay button{
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background: tomato;
+    color: white;
+    font-weight: bold;
+}
